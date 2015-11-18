@@ -122,7 +122,7 @@ function initialize(a) {
 	window.MainHex;
 	window.gdx = 0;
 	window.gdy = 0;
-	window.devMode = 0;
+	window.devMode = true;
 	window.lastGen = undefined;
 	window.prevTimeScored = undefined;
 	window.nextGen = undefined;

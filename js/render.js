@@ -1,9 +1,9 @@
 function render() {
-	var grey = '#bdc3c7';
+	var grey = '#000000';
 	if (gameState === 0) {
 		grey = "rgb(220, 223, 225)";
 	}
-	
+
 	ctx.clearRect(0, 0, trueCanvas.width, trueCanvas.height);
 	clearGameBoard();
 	if (gameState === 1 || gameState === 2 || gameState === -1 || gameState === 0) {
@@ -108,7 +108,7 @@ function drawKey(key, x, y) {
 			ctx.scale(settings.scale, settings.scale);
 			ctx.fillText(String.fromCharCode("0xf04b"), 0, 0);
 			break;
-		
+
 		default:
 			drawKey("left", x - 5, y);
 			drawKey("right", x + 5, y);
